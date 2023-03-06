@@ -1,14 +1,11 @@
-
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Task Tracker
-        </p>
+        <p>Task Tracker</p>
       </header>
     </div>
   );
-}
+};
 
 export default App;

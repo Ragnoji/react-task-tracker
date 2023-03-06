@@ -1,9 +1,12 @@
+// eslint-disable-next-line import/no-named-as-default
+import Header from "./components/Header/Header";
+
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header>
         <p>Task Tracker</p>
-      </header>
+      </Header>
     </div>
   );
 };

@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-const Wrapper = styled.header`
+const Wrapper = styled.footer`
   display: flex;
   background: cornflowerblue;
+  height: 64px;
+  font-size: xx-small;
+  font-weight: normal;
+  padding-top: 12px;
 `;
 
 const Footer = () => {

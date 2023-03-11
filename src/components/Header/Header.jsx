@@ -8,7 +8,7 @@ const Wrapper = styled.header`
 `;
 
 const Header = () => {
-  return <Wrapper>Text Header</Wrapper>;
+  return <Wrapper>Task Tracker</Wrapper>;
 };
 
 export default Header;

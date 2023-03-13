@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CurrentDateTimeText from "../../utils/CurrentDate";
 
 const Wrapper = styled.div`
   align-self: center;
@@ -20,11 +21,6 @@ const Wrapper = styled.div`
 `;
 
 const CardFacts = () => {
-  const CurrentDate = new Date();
-  const WeekDaysMap = { 0: "Monday", 1: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Saturday", 6: "Sunday" };
-  const DateText = `${
-    WeekDaysMap[CurrentDate.getDay()]
-  }, ${CurrentDate.getDate()}.${CurrentDate.getMonth()}.${CurrentDate.getFullYear()}, ${CurrentDate.getHours()}:${CurrentDate.getMinutes()}`;
   return (
     <Wrapper>
       <p>Stepanov Almaz Vladimirovich</p>
@@ -36,7 +32,7 @@ const CardFacts = () => {
         </li>
         <li>Sometimes reads Japanese novels translated into English language(enjoy beauty of both things)</li>
       </ul>
-      <p>{DateText}</p>
+      <p>{CurrentDateTimeText()}</p>
     </Wrapper>
   );
 };

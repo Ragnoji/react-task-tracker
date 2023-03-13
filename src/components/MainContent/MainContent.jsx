@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import CardFacts from "../CardFacts/CardFacts";
 
-const Wrapper = styled.body`
+const Wrapper = styled.main`
   display: flex;
   background: mintcream;
   justify-content: center;
-  margin: 24px 0 24px 0;
-  height: 100vh;
 `;
 
 const MainContent = () => {

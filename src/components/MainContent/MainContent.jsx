@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import CardFacts from "../CardFacts/CardFacts";
 
 const Wrapper = styled.main`
   display: flex;
@@ -7,12 +6,8 @@ const Wrapper = styled.main`
   justify-content: center;
 `;
 
-const MainContent = () => {
-  return (
-    <Wrapper>
-      <CardFacts />
-    </Wrapper>
-  );
+const MainContent = ({ children }) => {
+  return <Wrapper>{children}</Wrapper>;
 };
 
 export default MainContent;

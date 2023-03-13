@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import CardFacts from "../CardFacts/CardFacts";
+import Header from "../../organisms/Header/Header";
+import Footer from "../../organisms/Footer/Footer";
+import CardFacts from "../../molecules/CardFacts/CardFacts";
 
 const Wrapper = styled.div`
   display: flex;

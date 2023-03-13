@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import CurrentDateTimeText from "../../utils/CurrentDate";
+import CurrentDateTimeText from "../../../utils/CurrentDate";
+import Button from "../../atoms/Button/Button";
 
 const Wrapper = styled.div`
   align-self: center;
@@ -33,6 +34,7 @@ const CardFacts = () => {
         <li>Sometimes reads Japanese novels translated into English language(enjoy beauty of both things)</li>
       </ul>
       <p>{CurrentDateTimeText()}</p>
+      {Button({ label: "Push", color: "#fff" })}
     </Wrapper>
   );
 };

@@ -6,7 +6,7 @@ const Wrapper = styled.button(
   `,
 );
 
-const Button = ({ label, onClick, disabled, color }) => {
+const Button = ({ label = "OK", onClick = () => {}, disabled = false, color = "#fff" }) => {
   return (
     <Wrapper onClick={onClick} disabled={disabled} color={color}>
       {label}

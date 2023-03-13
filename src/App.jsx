@@ -1,7 +1,15 @@
-import DefaultTemplate from "./components/templates/DefaultTemplate/DefaultTemplate";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages";
 
 const App = () => {
-  return <DefaultTemplate>Task Tracker</DefaultTemplate>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;

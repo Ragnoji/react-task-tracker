@@ -34,7 +34,7 @@ const Table = ({ children, title }) => {
     <>
       <Header>
         <Title>{title}</Title>
-        <Button name="New Project" $color="#148AF1" handleOnClick={onClick} />
+        <Button label="New Project" color="#eee" onClick={onClick} />
       </Header>
       <TableStyled>
         <thead>

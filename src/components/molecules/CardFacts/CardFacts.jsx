@@ -34,7 +34,7 @@ const CardFacts = () => {
         <li>Sometimes reads Japanese novels translated into English language(enjoy beauty of both things)</li>
       </ul>
       <p>{CurrentDateTimeText()}</p>
-      {Button({ label: "Push", color: "#fff" })}
+      {Button({ child: "Push", color: "#fff" })}
     </Wrapper>
   );
 };

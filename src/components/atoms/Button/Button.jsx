@@ -12,17 +12,9 @@ const Wrapper = styled.button(
   `,
 );
 
-const Button = ({
-  children,
-  label = "ok",
-  onClick = () => {},
-  disabled = false,
-  color = "#fff",
-  background = "#666",
-}) => {
+const Button = ({ children, onClick = () => {}, disabled = false, color = "#fff", background = "#666" }) => {
   return (
     <Wrapper onClick={onClick} disabled={disabled} color={color} background={background}>
-      <p>{label}</p>
       {children}
     </Wrapper>
   );

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Header from "../../organisms/Header/Header";
 import Footer from "../../organisms/Footer/Footer";
-import CardFacts from "../../molecules/CardFacts/CardFacts";
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,10 +19,7 @@ const DefaultTemplate = ({ children }) => {
   return (
     <Wrapper>
       <Header />
-      <MainContent>
-        {children}
-        {CardFacts()}
-      </MainContent>
+      <MainContent>{children}</MainContent>
       <Footer />
     </Wrapper>
   );
